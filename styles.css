@@ -1,0 +1,89 @@
+*{
+    --Naranja_500: hsl(25, 97%, 53%);
+    --Blanco: hsl(0, 100%, 100%);
+    --Gris_500: hsl(217, 12%, 63%);
+    --Gris_900: hsl(213, 19%, 18%);
+    --Gris_950: hsl(216, 12%, 8%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    color: var(--Blanco);
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vw;
+    background-color: var(--Gris_950);
+    display: flex;
+    .conteiner{
+        margin: auto;
+        width: 22em;
+        padding: 1.5em;
+        border-radius: 1em;
+        background-color: var(--Gris_900);
+        .targeta_1{
+            display: none;
+            .img1{
+                margin-bottom: 1em;
+                padding: 0.5em;
+                width: 1.8em;
+                border-radius: 100%;
+                background-color: var(--Gris_950);
+            }
+            h2{
+                padding: 0.5em 0;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: var(--Blanco);
+            }
+            p{
+                text-align: justify;
+                color: var(--Gris_500);
+                line-height: 1.2em;
+            }
+            .caja_botones{
+                padding: 1em 0;
+                width: 100%;
+                /* background-color: aqua; */
+                display: flex;
+                gap: 1em;
+                button{
+                    padding: 1em;
+                    width: 100%;
+                    border: none;
+                    border-radius: 100%;
+                    color: var(--Gris_500);
+                    background-color: var(--Gris_950);
+                    cursor: pointer;
+                }
+                button:hover{
+                    background-color: var(--Blanco);
+                    color: var(--Gris_950);
+                }
+                button:focus{
+                    background-color: var(--Naranja_500);
+                }
+            }
+            .submit{
+                margin-top: 1em;
+                padding: 0.7em;
+                background-color: var(--Naranja_500);
+                width: 100%;
+                border-radius: 1.2em;
+                color: var(--Gris_950);
+                font-weight: 700;
+                text-transform: uppercase;
+                cursor: pointer;   
+                transition: all 0.3s ease;
+                /* border: none; */
+            }
+            .submit:hover{
+                background-color: var(--Blanco);
+                color: var(--Gris_950);
+            }
+        }   
+    }
+}
+
