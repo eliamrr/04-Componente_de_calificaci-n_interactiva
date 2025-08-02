@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=>{
-    let numero = ""
+    let numero = 0
     
     // Funcion devolver numero selecionado
     function SelectNumero(){
@@ -19,11 +19,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         let targeta2 = document.querySelector(".targeta_2")
         targeta1.style.display = "none"
         targeta2.style.display = "flex"
-
         let texto = document.getElementById("texto_a_cambiar")
         texto.innerHTML = `You select ${numero} put of 5`
     })
-
-
-
 })
